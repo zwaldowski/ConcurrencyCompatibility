@@ -240,7 +240,7 @@ extension CompatibilityURLSession {
             taskDelegates.removeAll()
         }
 
-        @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+        @available(macOS 11.0, iOS 13, tvOS 13, watchOS 6, *)
         func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
             underlying?.urlSessionDidFinishEvents?(forBackgroundURLSession: session)
         }
